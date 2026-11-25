@@ -1,0 +1,16 @@
+PARTE 2: QUESTÕES DESCRITIVAS (1 A 5):
+
+1. Qual é a diferença entre o que colocamos dentro da tag <head> (como <meta charset="UTF-8"> e <link rel="stylesheet">) e o que colocamos dentro da tag <body>? O que acontece se colocarmos o <footer> depois de fechar o </body>?
+
+As informações digitadas dentro de <head> não aparecem visualmente no corpo da página para o usuário final. Na tag <body> contém todo o conteúdo visível e interativo da aplicação (como títulos, textos, imagens, botões e formulários) que os usuários e o leitor de tela irão acessar diretamente. Se você colocar o <footer> depois de fechar o </body>, o código fica inválido.
+
+2. Para que serve o atributo alt dentro da tag <img>? Como o leitor de tela (NVDA) se comporta quando uma imagem informativa está sem alt, e como se comporta quando ela tem uma descrição bem escrita?
+
+
+3. No seu formulário, você ligou o <label> ao <input> usando dois atributos específicos. Quais são esses dois atributos e por que eles precisam ter exatamente o mesmo valor? Além disso, para que servem os atributos required e minlength="3"?
+
+4. Por que não devemos colocar letra branca (#FFFFFF) em um campo com fundo branco (#FFFFFF) ou letra azul escura em fundo preto? E qual propriedade do CSS usamos para deixar o foco do teclado bem visível quando o usuário aperta Tab?
+
+
+5. No formulário da Clínica Veterinária, você criou um grupo de opções de escolha única (<input type="radio">) dentro de uma tag <fieldset>. Para que serve a tag <legend> dentro desse grupo e o que acontece se você colocar valores diferentes no atributo name das duas opções (Cachorro e Gato)?
+
