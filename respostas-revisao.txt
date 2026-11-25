@@ -2,15 +2,28 @@ PARTE 2: QUESTÕES DESCRITIVAS (1 A 5):
 
 1. Qual é a diferença entre o que colocamos dentro da tag <head> (como <meta charset="UTF-8"> e <link rel="stylesheet">) e o que colocamos dentro da tag <body>? O que acontece se colocarmos o <footer> depois de fechar o </body>?
 
-As informações digitadas dentro de <head> não aparecem visualmente no corpo da página para o usuário final. Na tag <body> contém todo o conteúdo visível e interativo da aplicação (como títulos, textos, imagens, botões e formulários) que os usuários e o leitor de tela irão acessar diretamente. Se você colocar o <footer> depois de fechar o </body>, o código fica inválido.
+R: O <head> contém as configurações técnicas e metadados da página, como <meta charset="UTF-8">, o título da aba e o link para o CSS. Essas informações não aparecem como conteúdo visual na página. O <body> contém o conteúdo visível e interativo, como títulos, textos, imagens, botões e formulários.O <footer> representa o rodapé do documento ou de uma seção, então deve ficar dentro do <body>. Colocá-lo depois de </body> deixa o HTML fora da estrutura correta.
+
+
 
 2. Para que serve o atributo alt dentro da tag <img>? Como o leitor de tela (NVDA) se comporta quando uma imagem informativa está sem alt, e como se comporta quando ela tem uma descrição bem escrita?
+
+R: O atributo alt fornece uma descrição textual da imagem para acessibilidade. Para uma imagem informativa, uma descrição bem escrita permite que o NVDA anuncie seu conteúdo. Para uma imagem decorativa, a recomendação é usar alt="", para que ela não acrescente informação desnecessária. Sem uma descrição adequada em uma imagem informativa, usuários de leitores de tela não recebem a informação visual.
+
 
 
 3. No seu formulário, você ligou o <label> ao <input> usando dois atributos específicos. Quais são esses dois atributos e por que eles precisam ter exatamente o mesmo valor? Além disso, para que servem os atributos required e minlength="3"?
 
+R: Os atributos são for, no <label>, e id, no <input>. O valor de for deve corresponder ao id do campo para que o rótulo fique ligado a ele e forneça um nome acessível, required torna o preenchimento obrigatório antes do envio. minlength="3" define que o campo deve ter pelo menos três caracteres. O guia também explica que aria-describedby="id-dica" pode ligar o campo a um texto de instrução abaixo dele.
+
+
+
 4. Por que não devemos colocar letra branca (#FFFFFF) em um campo com fundo branco (#FFFFFF) ou letra azul escura em fundo preto? E qual propriedade do CSS usamos para deixar o foco do teclado bem visível quando o usuário aperta Tab?
+
+R: O texto precisa ter alto contraste com o fundo para facilitar a leitura. Por isso, texto branco em fundo branco ou azul escuro em fundo preto não é uma boa combinação: as letras ficam difíceis de distinguir. Para destacar o elemento selecionado ao navegar com Tab, usamos :focus com a propriedade outline. O guia recomenda não remover esse contorno.
+
 
 
 5. No formulário da Clínica Veterinária, você criou um grupo de opções de escolha única (<input type="radio">) dentro de uma tag <fieldset>. Para que serve a tag <legend> dentro desse grupo e o que acontece se você colocar valores diferentes no atributo name das duas opções (Cachorro e Gato)?
 
+R: O <legend> apresenta a pergunta ou o título do grupo dentro do <fieldset>. Assim, o NVDA anuncia a pergunta antes de cada opção. As opções “Cachorro” e “Gato” precisam ter o mesmo valor em name para pertencerem ao mesmo grupo de escolha única; ao marcar uma, a outra será desmarcada. Cada opção também precisa ter um id único, ligado ao for do seu <label>.

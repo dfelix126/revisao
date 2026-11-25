@@ -18,7 +18,7 @@
       <div class="area-imagem">
       
         <img 
-          src="cachorro.jpg"
+          src="Imagens/cachorro.jpg"
           alt="Dois cachorros um caramelo com as patas brancas e pescoço branco e 
           o outro um fiapo de manga, peludo caramelo com o pescoço cinza, ambos 
           porte medio correndo lado a lado"
@@ -28,14 +28,46 @@
 
         <form>
         <h3>Formulário de Cadastro ou Pedido</h3>
-        <P>
-        <label for="email-usuario">Nome do tutor:</label>
-        <input type="text" id="email-usuario" minlength="3" required aria-describedby="Maria da Silva">
-        <small id="Maria da Silva">Digite pelo menos 3 letras.</small>
+        <p>
+        <label for="nome-tutor">Nome do Tutor:</label>
+        <input type="text" id="nome-tutor" minlength="3" required aria-describedby="ajuda-nome-tutor">
+        <small id="ajuda-nome-tutor">Digite o nome completo do responsável.</small>
+        </p>
+        <label for="email-usuario">E-mail para Contato:</label>
+        <input type="email" id="email-usuario" name="email-usuario" required>
+        </p>
+
+        <fieldset>
+
+        <legend>Espécie do Animal:</legend>
+
+        <input type="radio" id="cachorro" name="animal" value="cachorro">
+        <label for="cachorro">Cachorro</label><br>
+
+        <input type="radio" id="gato" name="animal" value="gato">
+        <label for="gato">Gato</label><br>
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Serviços Desejados</legend>
+
+         <input type="checkbox" id="vacinacao" name="servicos" value="vacinacao">
+         <label for="vacinacao">Vacinação</label><br>
+
+        <input type="checkbox" id="banho" name="servicos" value="banho">
+        <label for="banho">Banho e Tosa</label><br>
+
+        </fieldset>
+
+        <button type="submit">Agendar Consulta</button>   
         </form>
-
-    </main>
-
+       </section>
+       </main>
+      <footer>
+      <p>Clínica Amigo Pet - Atendimento Acessível 2026</p>
+      </footer>
 
 </body>
+
 </html>
